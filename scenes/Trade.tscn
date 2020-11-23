@@ -1,0 +1,50 @@
+[gd_scene format=2]
+
+[node name="Trade" type="Node2D"]
+z_index = 200
+
+[node name="WindowDialog" type="WindowDialog" parent="."]
+visible = true
+margin_left = 337.646
+margin_top = 161.629
+margin_right = 738.646
+margin_bottom = 446.629
+window_title = "Trade"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="WindowDialog"]
+margin_left = 19.1234
+margin_top = 223.957
+margin_right = 96.1234
+margin_bottom = 276.957
+text = "Items"
+
+[node name="PopupMenu" type="PopupMenu" parent="WindowDialog"]
+visible = true
+
+margin_left = 21.0
+margin_top = 14.0
+margin_right = 373.0
+margin_bottom = 271.0
+
+[node name="Label" type="Label" parent="WindowDialog/PopupMenu"]
+margin_left = 148.562
+margin_top = 6.472
+margin_right = 188.562
+margin_bottom = 20.472
+text = "Items"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="WindowDialog/PopupMenu"]
+margin_left = 103.846
+margin_top = 129.146
+margin_right = 249.846
+margin_bottom = 143.146
+text = "Put tradable things here"
+__meta__ = {
+"_edit_use_anchors_": false
+}

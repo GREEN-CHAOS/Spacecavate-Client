@@ -1,0 +1,48 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://scripts/Mainscene.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Navball.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/ship.gd" type="Script" id=3]
+[ext_resource path="res://scenes/Launchtimelinecontrol.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/attack shipgltf.tscn" type="PackedScene" id=5]
+[ext_resource path="res://visuals/material01.bmp" type="Texture" id=6]
+
+[sub_resource type="SpatialMaterial" id=1]
+
+[sub_resource type="SphereMesh" id=2]
+material = SubResource( 1 )
+
+[sub_resource type="Skin" id=3]
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_texture = ExtResource( 6 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.629944
+margin_right = -0.629944
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Navball" parent="." instance=ExtResource( 2 )]
+
+[node name="Launchtimelinecontrol" parent="." instance=ExtResource( 4 )]
+
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="ship" parent="Spatial" instance=ExtResource( 5 )]
+transform = Transform( 1.10934, 0.217049, 0.803262, 0.901544, 0.733056, -0.509347, -1.39878, 0.644608, 0.308765, 0, 0, 22.5396 )
+script = ExtResource( 3 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Spatial"]
+mesh = SubResource( 2 )
+skin = SubResource( 3 )
+material/0 = SubResource( 4 )
+
+[node name="Camera" type="Camera" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -2 )
+fov = 48.4946
+[connection signal="resized" from="." to="." method="_resized"]

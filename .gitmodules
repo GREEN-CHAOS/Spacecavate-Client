@@ -1,0 +1,6 @@
+[submodule "Modablemenucreator"]
+	path = Modablemenucreator
+	url = https://github.com/haennes/Modablemenucreator.git
+[submodule "godot"]
+	path = Godotenginecustombuild/godot
+	url = https://github.com/godotengine/godot.git

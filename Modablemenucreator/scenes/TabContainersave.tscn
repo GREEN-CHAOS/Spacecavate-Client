@@ -1,0 +1,333 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Modablemenucreator/scenes/group.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Modablemenucreator/scenes/Tab.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Modablemenucreator/imports/pfeil1.png" type="Texture" id=3]
+[ext_resource path="res://Modablemenucreator/imports/pfeil2.png" type="Texture" id=4]
+
+[node name="TabContainer" type="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TabOne" type="Tabs" parent="." instance=ExtResource( 2 )]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+scrolling_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabOne"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 30.0
+
+[node name="_h_scroll" type="HScrollBar" parent="TabOne/ScrollContainer"]
+rect_min_size = Vector2( 1040, 40000 )
+
+[node name="_v_scroll" type="VScrollBar" parent="TabOne/ScrollContainer"]
+
+[node name="Control" type="VBoxContainer" parent="TabOne/ScrollContainer"]
+
+[node name="group" type="VBoxContainer" parent="TabOne/ScrollContainer/Control" instance=ExtResource( 1 )]
+anchor_right = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="grouptop" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group"]
+margin_right = 1024.0
+margin_bottom = 100.0
+
+[node name="groupbutton" type="TextureButton" parent="TabOne/ScrollContainer/Control/group/grouptop"]
+margin_right = 100.0
+margin_bottom = 100.0
+toggle_mode = true
+pressed = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="TabOne/ScrollContainer/Control/group/grouptop"]
+margin_left = 104.0
+margin_top = 43.0
+margin_right = 104.0
+margin_bottom = 57.0
+text = "group"
+align = 1
+
+[node name="groupbottom" type="MarginContainer" parent="TabOne/ScrollContainer/Control/group"]
+margin_top = 104.0
+margin_right = 1024.0
+margin_bottom = 104.0
+custom_constants/margin_left = 100
+
+[node name="ExtensionContainer" type="VBoxContainer" parent="TabOne/ScrollContainer/Control/group/groupbottom"]
+margin_left = 100.0
+margin_right = 1024.0
+rect_min_size = Vector2( 0, 134 )
+
+[node name="y0InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer"]
+anchor_right = 1.0
+margin_left = 380.0
+
+[node name="y0x0changeTruevalstep100ifpassedorsteporfixed-1" type="Label" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y0InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_top = 3.0
+margin_right = 25.0
+margin_bottom = 17.0
+text = "0"
+
+[node name="y0x1changeTruevalstep100ifpassedorsteporfixed1" type="Button" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y0InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_left = 29.0
+margin_right = 66.0
+margin_bottom = 20.0
+toggle_mode = true
+text = "0"
+
+[node name="y1InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer"]
+anchor_right = 1.0
+margin_left = 380.0
+
+[node name="y1x0changeTruevalstep100ifpassedorsteporfixed-1" type="Label" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y1InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_top = 5.0
+margin_right = 25.0
+margin_bottom = 19.0
+text = "0"
+
+[node name="y1x1changeFalsevalstep100ifpassedorsteporfixed-1" type="CheckBox" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y1InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_left = 29.0
+margin_right = 82.0
+margin_bottom = 24.0
+text = "text"
+
+[node name="y2InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer"]
+anchor_right = 1.0
+margin_left = 380.0
+
+[node name="y2x0changeTruevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y2InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_top = 3.0
+margin_right = 25.0
+margin_bottom = 17.0
+text = "0"
+
+[node name="y2x1changeFalsevalstep100ifpassedorsteporfixed1" type="Button" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y2InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_left = 29.0
+margin_right = 66.0
+margin_bottom = 20.0
+toggle_mode = true
+text = "text"
+
+[node name="y3InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer"]
+anchor_right = 1.0
+margin_left = 380.0
+
+[node name="y3x0changeTruevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y3InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_right = 25.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="y3x1changeFalsevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y3InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_left = 29.0
+margin_right = 54.0
+margin_bottom = 14.0
+text = "text"
+
+[node name="y4InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer"]
+anchor_right = 1.0
+margin_left = 380.0
+
+[node name="y4x0changeTruevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y4InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_right = 25.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="y4x1changeFalsevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y4InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_left = 29.0
+margin_right = 54.0
+margin_bottom = 14.0
+text = "text"
+
+[node name="y5InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer"]
+anchor_right = 1.0
+margin_left = 380.0
+
+[node name="y5x0changeTruevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y5InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_right = 25.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="y5x1changeFalsevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y5InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_left = 29.0
+margin_right = 54.0
+margin_bottom = 14.0
+text = "text"
+
+[node name="y6InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer"]
+anchor_right = 1.0
+margin_left = 380.0
+
+[node name="y6x0changeTruevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y6InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_right = 25.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="y6x1changeFalsevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y6InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_left = 29.0
+margin_right = 54.0
+margin_bottom = 14.0
+text = "text"
+
+[node name="y8InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer"]
+anchor_right = 1.0
+margin_left = 380.0
+
+[node name="y8x0changeTruevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y8InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_right = 25.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="y8x1changeFalsevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group/groupbottom/ExtensionContainer/y8InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup"]
+margin_left = 29.0
+margin_right = 54.0
+margin_bottom = 14.0
+text = "text"
+
+[node name="group3" type="VBoxContainer" parent="TabOne/ScrollContainer/Control" instance=ExtResource( 1 )]
+anchor_right = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="grouptop" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group3"]
+margin_right = 1024.0
+margin_bottom = 100.0
+
+[node name="groupbutton" type="TextureButton" parent="TabOne/ScrollContainer/Control/group3/grouptop"]
+margin_right = 100.0
+margin_bottom = 100.0
+toggle_mode = true
+pressed = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="TabOne/ScrollContainer/Control/group3/grouptop"]
+margin_left = 104.0
+margin_top = 43.0
+margin_right = 104.0
+margin_bottom = 57.0
+text = "group3"
+align = 1
+
+[node name="groupbottom" type="MarginContainer" parent="TabOne/ScrollContainer/Control/group3"]
+margin_top = 104.0
+margin_right = 1024.0
+margin_bottom = 104.0
+custom_constants/margin_left = 100
+
+[node name="ExtensionContainer" type="VBoxContainer" parent="TabOne/ScrollContainer/Control/group3/groupbottom"]
+margin_left = 100.0
+margin_right = 1024.0
+rect_min_size = Vector2( 0, 28 )
+
+[node name="y7InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup3" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group3/groupbottom/ExtensionContainer"]
+anchor_right = 1.0
+margin_left = 380.0
+
+[node name="y7x0changeTruevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group3/groupbottom/ExtensionContainer/y7InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup3"]
+margin_right = 25.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="y7x1changeFalsevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group3/groupbottom/ExtensionContainer/y7InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup3"]
+margin_left = 29.0
+margin_right = 54.0
+margin_bottom = 14.0
+text = "text"
+
+[node name="y9InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup3" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group3/groupbottom/ExtensionContainer"]
+anchor_right = 1.0
+margin_left = 380.0
+
+[node name="y9x0changeTruevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group3/groupbottom/ExtensionContainer/y9InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup3"]
+margin_right = 25.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="y9x1changeTruevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group3/groupbottom/ExtensionContainer/y9InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup3"]
+margin_left = 29.0
+margin_right = 54.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="group2" type="VBoxContainer" parent="TabOne/ScrollContainer/Control" instance=ExtResource( 1 )]
+anchor_right = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="grouptop" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group2"]
+margin_right = 1024.0
+margin_bottom = 100.0
+
+[node name="groupbutton" type="TextureButton" parent="TabOne/ScrollContainer/Control/group2/grouptop"]
+margin_right = 100.0
+margin_bottom = 100.0
+toggle_mode = true
+pressed = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="TabOne/ScrollContainer/Control/group2/grouptop"]
+margin_left = 104.0
+margin_top = 43.0
+margin_right = 104.0
+margin_bottom = 57.0
+text = "group2"
+align = 1
+
+[node name="groupbottom" type="MarginContainer" parent="TabOne/ScrollContainer/Control/group2"]
+margin_top = 104.0
+margin_right = 1024.0
+margin_bottom = 104.0
+custom_constants/margin_left = 100
+
+[node name="ExtensionContainer" type="VBoxContainer" parent="TabOne/ScrollContainer/Control/group2/groupbottom"]
+margin_left = 100.0
+margin_right = 1024.0
+rect_min_size = Vector2( 0, 28 )
+
+[node name="y10InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup2" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group2/groupbottom/ExtensionContainer"]
+anchor_right = 1.0
+margin_left = 380.0
+
+[node name="y10x0changeTruevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group2/groupbottom/ExtensionContainer/y10InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup2"]
+margin_right = 25.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="y10x1changeTruevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group2/groupbottom/ExtensionContainer/y10InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup2"]
+margin_left = 29.0
+margin_right = 54.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="y11InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup2" type="HBoxContainer" parent="TabOne/ScrollContainer/Control/group2/groupbottom/ExtensionContainer"]
+anchor_right = 1.0
+margin_left = 380.0
+
+[node name="y11x0changeTruevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group2/groupbottom/ExtensionContainer/y11InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup2"]
+margin_right = 25.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="y11x1changeTruevalstep100ifpassedorsteporfixed1" type="Label" parent="TabOne/ScrollContainer/Control/group2/groupbottom/ExtensionContainer/y11InputMaporpropertyFalsepopupTrueproperty(property1)groupgroup2"]
+margin_left = 29.0
+margin_right = 54.0
+margin_bottom = 14.0
+text = "0"

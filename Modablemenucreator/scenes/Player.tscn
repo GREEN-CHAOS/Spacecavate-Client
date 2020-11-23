@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CapsuleShape" id=1]
+height = 1.93891
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Cams" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, 0 )
+
+[node name="ARVROrigin" type="ARVROrigin" parent="Cams"]
+
+[node name="ARVRCamera" type="ARVRCamera" parent="Cams/ARVROrigin"]
+
+[node name="InterpolatedCamera" type="InterpolatedCamera" parent="Cams"]
+
+[node name="ClippedCamera" type="ClippedCamera" parent="Cams/InterpolatedCamera"]
+
+[node name="Camera" type="Camera" parent="Cams"]
+
+[node name="Body" type="Spatial" parent="."]
+
+[node name="KinematicBody" type="KinematicBody" parent="Body"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Body/KinematicBody"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, 1, 0, -1, -1.62921e-07, 0, 2, 0 )
+shape = SubResource( 1 )

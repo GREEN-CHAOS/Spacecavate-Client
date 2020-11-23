@@ -1,0 +1,2 @@
+C:\Users\test\Documents\GitHub\Spacecavate\experimental\.mono\temp\obj\Debug\Spacecavate.csprojAssemblyReference.cache
+C:\Users\test\Documents\GitHub\Spacecavate\experimental\.mono\temp\obj\Debug\Spacecavate.csproj.CoreCompileInputs.cache

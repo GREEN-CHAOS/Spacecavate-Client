@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Server",
+      "appliesTo": "SERVER/Server.cpp",
+      "type": "launch"
+    }
+  ]
+}

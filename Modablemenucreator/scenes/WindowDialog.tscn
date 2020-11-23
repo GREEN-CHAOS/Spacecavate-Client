@@ -1,0 +1,76 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Modablemenucreator/imports/controllerps4_2.png" type="Texture" id=1]
+[ext_resource path="res://Modablemenucreator/imports/controllerxbox2.png" type="Texture" id=2]
+[ext_resource path="res://Modablemenucreator/imports/phone_screen2.png" type="Texture" id=3]
+
+[node name="WindowDialog" type="WindowDialog"]
+visible = true
+anchor_left = 0.043
+anchor_top = 0.043
+anchor_right = 0.957
+anchor_bottom = 0.957
+margin_left = 3.77551
+margin_top = -1.88776
+margin_right = 3.77551
+margin_bottom = -1.8877
+grow_horizontal = 2
+grow_vertical = 2
+popup_exclusive = true
+window_title = "Enter an Key"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="Label" parent="."]
+anchor_left = 0.3
+anchor_top = 0.3
+anchor_right = 0.7
+anchor_bottom = 0.7
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Phone" type="TextureRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControllerXbox2" type="TextureRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 508.57
+margin_top = 228.67
+margin_right = 500.57
+margin_bottom = 192.67
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ControllerPS2" type="TextureRect" parent="."]
+visible = false
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -625.096
+margin_top = -488.012
+margin_right = 74.9038
+margin_bottom = 11.9879
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
